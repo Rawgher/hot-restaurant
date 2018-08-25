@@ -1,5 +1,6 @@
 body {
     font-family: 'Abel', sans-serif;
+    background: url("./Images/restaurant_icons.png");
 }
 
 p {
@@ -16,10 +17,10 @@ p {
     margin: 20px auto 0;
     text-align: center;
     width: 70%;
-    background-color: #d1e5ec;
+    background-color: rgba(208, 228, 236, 0.75);
     padding: 40px;
+    
 }
-
 
 .container {
     margin: 0 auto 30px;
@@ -76,3 +77,4 @@ p {
 .min-height {
     min-height: 300px;
 }
+
