@@ -1,5 +1,6 @@
 body {
     font-family: 'Abel', sans-serif;
+    background: url("./Images/restaurant_icons.png");
 }
 
 p {
@@ -19,7 +20,6 @@ p {
     background-color: #d1e5ec;
     padding: 40px;
 }
-
 
 .container {
     margin: 0 auto 30px;
