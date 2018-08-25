@@ -16,7 +16,7 @@
     <!-- Fonts! -->
     <link href="https://fonts.googleapis.com/css?family=Abel|Pacifico" rel="stylesheet">
 
-    <title>Hot Restaurant</title>
+    <title>Hot Restaurant | Reservation Form</title>
 </head>
 
 <body>
@@ -88,6 +88,31 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $("#submit").on("click", function () {
+            event.preventDefault();
+
+            let newReservations = {
+                name: $("#name").val().trim(),
+                phoneNumber: $("#phoneNumber").val().trim(),
+                email: $("#email").val().trim(),
+                uniqueID: $("#uniqueID").val().trim()
+            };
+
+            console.log(newReservations);
+
+            $.post("/api/create_reservation", newReservations)
+                .then(function (data) {
+                    console.log("reservationForm.html", data);
+                    alert("Adding reservation...");
+                });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
