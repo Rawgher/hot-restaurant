@@ -1,10 +1,69 @@
-.flame-icon {
-    margin: 0 auto;
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+p {
+    font-size: 24px;
+}
+
+#title {
+    font-size: 65px;
+    font-family: 'Pacifico', cursive;
+    color: white;
 }
 
 .jumbotron {
-    margin: 0 auto;
+    margin: 20px auto 0;
     text-align: center;
-    width: 90%;
+    width: 70%;
+    background-color: #d1e5ec;
+    padding: 40px;
 }
 
+.RDP_textDec {
+    text-decoration: none;
+    color: black;
+}
+
+.no-dec {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-dec:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* icons */
+
+.calendar {
+    height: 20px;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+.list {
+    height: 22px;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+.flame-icon {
+    margin: 0 auto 18px;
+    height: 60px;
+    width: auto;
+}
+
+/* buttons */
+
+.btn {
+    margin: 0 10px;
+}
+.btn-home {
+
+}
+.btn-table {
+    background-color: #eecb27;
+}
+.btn-res {
+    background-color: #e13239;
+}
