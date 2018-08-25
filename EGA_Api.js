@@ -34,7 +34,7 @@ app.get("/", function(req, res) {
   
   // Displays a single character, or returns false
   app.get("/api/reservation/:newReservation", function(req, res) {
-    var reservationPlaced = req.params.reservation;
+    var reservationPlaced = req.params.newReservation;
 
     console.log(reservationPlaced);
 
@@ -52,7 +52,7 @@ app.post("/reservationViews", function(req, res) {
 
   newReservation.routeName = newReservation.name.replace(/\s+/g, "").toLowerCase();
 
-  console.log(newReservation);
+  // console.log(newReservation);
 
   reservation.push(newReservation);
 
