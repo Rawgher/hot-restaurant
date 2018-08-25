@@ -1,5 +1,3 @@
-// We have so many tables left looking at database to reference it
-
 $("#submit").on("click", function () {
 
     let count = "";
@@ -13,5 +11,21 @@ $("#submit").on("click", function () {
         $("#RDP_tableRef").html("We're all out of tables! Feel free to put your name on our waiting list.");
     }
 
+
+        event.preventDefault();
+        let newReservations = {
+          name: $("#name").val().trim(),
+          phoneNumber: $("#phoneNumber").val().trim(),
+          email: $("#email").val().trim(),
+          uniqueID: $("#uniqueID").val().trim()
+        };
+  
+        // Question: What does this code do??
+        $.post("/api/reservations", newReservations)
+          .then(function(data) {
+            console.log("reservationForm.html", data);
+            alert("Adding reservation...");
+          });
 });
 
+// hi
