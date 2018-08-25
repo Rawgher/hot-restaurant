@@ -52,8 +52,9 @@ app.post("/api/reservation", function(req, res) {
 
   newReservation.routeName = newReservation.name.replace(/\s+/g, "").toLowerCase();
 
-  // console.log(newReservation);
-
+  console.log(newReservation.routeName);
+  console.log(newReservation.name);
+  
   reservation.push(newReservation);
 
   res.json(reservation);            

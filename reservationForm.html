@@ -103,10 +103,9 @@
 
             console.log(newReservations);
 
-            $.post("/api/create_reservation", newReservations)
+            $.post("/api/reservation", newReservations)
                 .then(function (data) {
                     console.log("reservationForm.html", data);
-                    alert("Adding reservation...");
                 });
 
         });
