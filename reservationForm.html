@@ -21,13 +21,35 @@
 
 <body>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your reservation has been placed successfully.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="jumbotron">
         <h1 class="display-4" id="title"><img class="flame-icon align-middle" src="images/flame.png"> Hot Restaurant</h1>
         <hr class="my-4">
         <p>Make your reservation!</p>
         <p><button type="button" class="btn btn-home btn-lg"><img class="calendar" src="images/home.png"><a href="./index.html"
-            class="text-dark no-dec">Home</a></button><button type="button" class="btn btn-table btn-lg"><img class="list" src="images/clipboard.png"><a href="./reservationViews.html" class="no-dec text-dark">View Tables</a></button><button type="button" class="btn btn-res btn-lg"><img class="calendar" src="images/calendar.png"><a href="./reservationForm.html" class="no-dec text-dark">Make Reservation</a></button>
-          </p>
+                    class="text-dark no-dec">Home</a></button><button type="button" class="btn btn-table btn-lg"><img class="list"
+                    src="images/clipboard.png"><a href="./reservationViews.html" class="no-dec text-dark">View Tables</a></button><button
+                type="button" class="btn btn-res btn-lg"><img class="calendar" src="images/calendar.png"><a href="./reservationForm.html"
+                    class="no-dec text-dark">Make Reservation</a></button>
+        </p>
     </div>
 
     <div class="container">
@@ -53,7 +75,7 @@
                         <label for="uniqueID">Unique ID</label>
                         <input type="text" class="form-control" id="uniqueID">
                     </div>
-                    <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                    <button type="submit" class="btn btn-danger" id="submit" data-toggle="modal" data-target="#exampleModal">Submit</button>
                 </form>
             </div>
         </div>
